@@ -1,0 +1,35 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Information</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Everything you need to know about Mars</h1>
+      <p>At the simple push of a button!</p>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+    </div>
+    <h2>News! : {{mars.article_title}}
+    {{mars.article_paragraph}} </h2>
+
+    <h2>Featured Mars image</h2>
+    <img src="{{ mars.Featured_Image_URL }}" alt="Featured Mars Image">
+    
+    <h3>The Current Weather in Mars is: {{ mars.Weather }}</h3>
+    <h3>Here are some facts about Mars!
+     {{mars.Mars_Facts}}</h3>
+
+
+     <h2>Finally, let me show you the Hemispheres!
+     {{mars.Hemispheres}} </h2>
+  </div>
+</body>
+
+</html>
